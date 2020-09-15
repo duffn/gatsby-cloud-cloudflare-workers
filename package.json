@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-cloud-cloudflare-workers",
+  "description": "A bare bones example of deploying a Gatsby Cloud site to Cloudflare Workers.",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@cloudflare/wrangler": "^1.11.0",
+    "execa": "^4.0.3",
+    "gatsby": "^2.24.54",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "prettier": "2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duffn/gatsby-cloud-cloudflare-workers"
+  },
+  "bugs": {
+    "url": "https://github.com/duffn/gatsby-cloud-cloudflare-workers/issues"
+  }
+}
