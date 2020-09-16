@@ -9,7 +9,7 @@ exports.onPostBuild = async () => {
   // if (currentBranch === PRODUCTION_BRANCH) {
   const child = spawn(`./node_modules/.bin/wrangler`, [`publish`])
   for await (const data of child.stdout) {
-    console.log(data)
+    console.log(data.toString())
   }
   // const { stdout } = await execa("./node_modules/.bin/wrangler", ["publish"])
 
