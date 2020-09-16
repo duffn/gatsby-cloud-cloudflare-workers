@@ -11,7 +11,7 @@ exports.onPostBuild = async () => {
     }
   } else {
     console.log(
-      `\nSkipping deploy to Cloudflare. ${currentBranch} does not match ${PRODUCTION_BRANCH} production branch.\n`
+      `Skipping deploy to Cloudflare. ${currentBranch} does not match ${PRODUCTION_BRANCH} production branch.`
     )
   }
 }
