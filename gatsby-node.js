@@ -4,6 +4,7 @@ const { spawn } = require("child_process")
 exports.onPostBuild = async () => {
   const PRODUCTION_BRANCH = `master`
   const currentBranch = process.env.BRANCH
+  console.log("exports.onPostBuild -> currentBranch", currentBranch)
 
   // if (currentBranch === PRODUCTION_BRANCH) {
   const child = spawn(`./node_modules/.bin/wrangler`, [`publish`])
