@@ -1,7 +1,11 @@
 const { spawn } = require("child_process")
 
 exports.onPostBuild = async () => {
+  // Your production branch.
   const PRODUCTION_BRANCH = `master`
+  // The branch you are currently building in Gatsby Cloud. I'll assume below
+  // that you only want to deploy to Cloudflare if it's your production branch
+  // that is being built.
   const currentBranch = process.env.BRANCH
 
   if (currentBranch === PRODUCTION_BRANCH) {
