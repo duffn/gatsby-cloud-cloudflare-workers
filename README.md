@@ -1,3 +1,7 @@
+# Unmaintained
+
+_This repository is archived and unmaintained. Use at your own risk._
+
 # Gatsby Cloud & Cloudflare Workers
 
 A barebones example of using [Gatsby Cloud](https://www.gatsbyjs.com/cloud/) to deploy to [Cloudflare Workers](https://workers.cloudflare.com/).
